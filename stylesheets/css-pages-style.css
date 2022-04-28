@@ -39,7 +39,8 @@ h2 {
 p {
   font-size: 24px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  line-height: 40px;
+  /* Times New Roman is my favorite font because its familiar and professional. */
+  line-height: 42px;
   color: rgb(0, 52, 82);
 }
-/* Contrast Ratio of body and p: 11:1 (rounded down) */
+/* Contrast Ratio of body and p: 13:1 (rounded up) */
