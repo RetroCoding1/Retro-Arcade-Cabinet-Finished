@@ -43,4 +43,7 @@ p {
   line-height: 42px;
   color: rgb(0, 52, 82);
 }
+img {
+  float: right;
+}
 /* Contrast Ratio of body and p: 13:1 (rounded up) */
