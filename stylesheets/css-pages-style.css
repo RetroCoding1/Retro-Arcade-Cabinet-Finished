@@ -7,10 +7,9 @@
   padding: 5px;
   margin: 4px;
   border: 2px;
-  border: solid;
-  border: black;
-  background-color: #dfe3ff;
-  color: rgb(0, 100, 100);
+  border: 1px solid black;
+  background-color: #daebeb;
+  color: rgb(0, 52, 82);
 }
 .nav-link li {
   display: inline-block;
@@ -24,17 +23,23 @@ li {
   font-size: 20px;
 }
 body {
-  background-color: rgb(230, 236, 255);
+  background-color: rgb(255, 254, 241);
 }
 h1 {
   text-align: center;
   font-size: 45px;
-  color: #3ecaec;
+  color: #a16100;
 }
-/* Contrast Ratio: 11:2 (rounded down) */
+h2 {
+  font-size: 25px;
+  color: #a16100;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
 p {
   font-size: 24px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   line-height: 40px;
   color: rgb(0, 52, 82);
 }
+/* Contrast Ratio of body and p: 11:1 (rounded down) */
