@@ -24,6 +24,10 @@ li {
 }
 body {
   background-color: rgb(255, 254, 241);
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 2%;
+  margin-right: 5%;
 }
 h1 {
   text-align: center;
