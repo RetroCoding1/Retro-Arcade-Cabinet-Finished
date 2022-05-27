@@ -28,6 +28,41 @@ body {
   margin-bottom: 5%;
   margin-left: 2%;
   margin-right: 5%;
+  -o-animation: fade-in 1s ease-in 0.5s forwards;
+  -moz-animation: fade-in 1s ease-in 0.5s forwards;
+  -webkit-animation: fade-in 1s ease-in 0.5s forwards;
+  animation: fade-in 1s ease-in 0.5s forwards;
+  /* fade-in is animation name, 1s is animation duration, ease-in is animation timing function, 
+  0.2 is animation delay, forwards is animation direction*/
+  position: relative;
+  top: 200px;
+  opacity: 0;
+}
+@keyframes fade-in {
+  /* from {
+          position: relative;
+          top: 200px;
+          opacity: 0;
+        } 
+        An alternate way of defining the beginning of the animation. */
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+nav a:hover,
+nav a:focus {
+  background-color: #f0f8ff;
+  color: #00549e;
+}
+nav a li {
+  /* Changes all list items in the nav so that they will display beside one another, but still be affected by Box model properties.      */
+  display: inline-block;
+  /* Adds spacing around the outside of an element. */
+  margin: 4px;
+  /* Adds spacing on the inside of an element. */
+  padding: 5px;
+  font-size: 20px;
 }
 h1 {
   text-align: center;
