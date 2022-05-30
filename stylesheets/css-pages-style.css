@@ -93,11 +93,17 @@ img {
 }
 @keyframes fade-in-late {
   from {
+    -o-transform: skew(90deg, 90deg);
+    -moz-transform: skew(90deg, 90deg);
+    -webkit-transform: skew(90deg, 90deg);
     transform: skew(90deg, 90deg);
     /* Discovered this result on pure accident, it looks AWESOME. */
     opacity: 0;
   }
   to {
+    -o-transform: skew(0deg, 0deg);
+    -moz-transform: skew(0deg, 0deg);
+    -webkit-transform: skew(0deg, 0deg);
     transform: skew(0deg, 0deg);
     opacity: 1;
     visibility: visible;
