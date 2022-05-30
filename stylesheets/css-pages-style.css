@@ -74,6 +74,7 @@ h2 {
   color: #a16100;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transform: matrix();
 }
 p {
   font-size: 24px;
@@ -83,6 +84,24 @@ p {
   color: rgb(0, 52, 82);
 }
 img {
+  visibility: hidden;
   float: right;
+  -o-animation: fade-in-late 1s ease-in 2s forwards;
+  -moz-animation: fade-in-late 1s ease-in 2s forwards;
+  -webkit-animation: fade-in-late 1s ease-in 2s forwards;
+  animation: fade-in-late 1s ease-in 2s forwards;
 }
-/* Contrast Ratio of body and p: 13:1 (rounded up) */
+@keyframes fade-in-late {
+  from {
+    transform: skew(90deg, 90deg);
+    /* Discovered this result on pure accident, it looks AWESOME. */
+    opacity: 0;
+  }
+  to {
+    transform: skew(0deg, 0deg);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+/* Contrast Ratio of body and p: 12.83:1 */
+/* Contrast Ratio of body and h1: 4:89:1 */
