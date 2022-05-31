@@ -49,6 +49,8 @@ body {
     top: 0;
     opacity: 1;
   }
+  /* Reloading the page causes the animation to play incorrectly. However, clicking a link in the nav will play the animation correctly.
+  No idea why this happens. */
 }
 nav a:hover,
 nav a:focus {
@@ -74,7 +76,10 @@ h2 {
   color: #a16100;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  transform: matrix();
+  border: solid black 2px;
+  background-color: rgb(255, 252, 213);
+  display: inline-block;
+  padding: 5px;
 }
 p {
   font-size: 24px;
@@ -108,6 +113,12 @@ img {
     opacity: 1;
     visibility: visible;
   }
+}
+a:hover,
+a:focus {
+  color: rgb(32, 175, 218);
+  font-weight: bolder;
+  transition: 0.5s;
 }
 /* Contrast Ratio of body and p: 12.83:1 */
 /* Contrast Ratio of body and h1: 4:89:1 */

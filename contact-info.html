@@ -1,4 +1,4 @@
-<!-- This page is not to be marked. It's just some contact info I decided to add. -->
+<!-- Transitions used for links here. I also added javascript when clicking the GitHub link!-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -22,19 +22,26 @@
         <a href="contact-info.html" class="nav-link"><li>Contact Info</li></a>
       </ul>
     </nav>
-    <h1>Contact Info</h1>
-    <p>
-      Social Links:
-      <a href="https://twitter.com/RetroTheGamerYT" style="font-size: 25px"
-        >Twitter,
-      </a>
-      <a href="https://github.com/RetroCoding1" style="font-size: 25px"
-        >GitHub
-      </a>
+    <section>
+      <h1>Contact Info</h1>
+      <p>
+        Social Links:
+        <a
+          href="https://github.com/RetroCoding1"
+          style="font-size: 25px"
+          onclick="myFunction()"
+          >GitHub
+        </a>
+        <br />
+        Email: nickandretrocoding@gmail.com<br />
+        Phone: 204-802-4025 (currently inactive)
+      </p>
       <br />
-      Email: nickandretrocoding@gmail.com<br />
-      Phone: 204-802-4025 (currently inactive)
-    </p>
-    <br />
+    </section>
+    <script>
+      function myFunction() {
+        confirm("You are about to head to RetroCoding1's GitHub Page");
+      }
+    </script>
   </body>
 </html>
