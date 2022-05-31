@@ -11,36 +11,42 @@
     <!--Stylesheets-->
   </head>
   <body>
-    <h2>Nick's Retro Arcade Cabinet</h2>
-    <nav>
-      <ul>
-        <a href="index.html" class="nav-link"><li>Home Page</li></a>
-        <a href="more-about.html" class="nav-link"><li>More about...</li></a>
-        <a href="arcade-machines.html" class="nav-link"
-          ><li>Arcade machines</li></a
-        >
-        <a href="contact-info.html" class="nav-link"><li>Contact Info</li></a>
-      </ul>
-    </nav>
-    <section>
-      <h1>Contact Info</h1>
-      <p>
-        Social Links:
-        <a
-          href="https://github.com/RetroCoding1"
-          style="font-size: 25px"
-          onclick="myFunction()"
-          >GitHub
-        </a>
+    <header>
+      <h2>Nick's Retro Arcade Cabinet</h2>
+      <nav>
+        <ul>
+          <a href="index.html" class="nav-link"><li>Home Page</li></a>
+          <a href="more-about.html" class="nav-link"><li>More about...</li></a>
+          <a href="arcade-machines.html" class="nav-link"
+            ><li>Arcade machines</li></a
+          >
+          <a href="contact-info.html" class="nav-link"><li>Contact Info</li></a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Contact Info</h1>
+        <p>
+          Social Links:
+          <a
+            href="https://github.com/RetroCoding1"
+            style="font-size: 25px"
+            onclick="myFunction()"
+            >GitHub
+          </a>
+          <br />
+          Email: nickandretrocoding@gmail.com<br />
+          Phone: 204-802-4025 (currently inactive)
+        </p>
         <br />
-        Email: nickandretrocoding@gmail.com<br />
-        Phone: 204-802-4025 (currently inactive)
-      </p>
-      <br />
-    </section>
+      </section>
+    </main>
     <script>
       function myFunction() {
-        confirm("You are about to head to RetroCoding1's GitHub Page");
+        var moveToGitHub = confirm(
+          "You are about to head to RetroCoding1's GitHub Page"
+        );
       }
     </script>
   </body>
