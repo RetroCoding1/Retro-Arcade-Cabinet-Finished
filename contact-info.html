@@ -27,26 +27,34 @@
     <main>
       <section>
         <h1>Contact Info</h1>
-        <p>
-          Social Links:
-          <a
-            href="https://github.com/RetroCoding1"
-            style="font-size: 25px"
-            onclick="myFunction()"
-            >GitHub
-          </a>
-          <br />
-          Email: nickandretrocoding@gmail.com<br />
-          Phone: 204-802-4025 (currently inactive)
-        </p>
+        <a
+          href="https://github.com/RetroCoding1"
+          style="font-size: 25px"
+          target="_blank"
+          onclick="myFunction()"
+        >
+          Social Link: GitHub
+        </a>
         <br />
+        <a
+          href="mailto:nickandretrocoding@gmail.com"
+          target="_blank"
+          style="font-size: 25px"
+        >
+          Email: nickandretrocoding@gmail.com
+        </a>
       </section>
     </main>
     <script>
       function myFunction() {
+        event.preventDefault();
         var moveToGitHub = confirm(
-          "You are about to head to RetroCoding1's GitHub Page"
+          "You are about to head to RetroCoding1's GitHub Page (if it doesnt work, you may need to enable pop-ups)"
         );
+
+        if (moveToGitHub) {
+          window.open("https://github.com/RetroCoding1", "_blank");
+        }
       }
     </script>
   </body>
