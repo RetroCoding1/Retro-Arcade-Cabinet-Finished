@@ -128,7 +128,18 @@ a:hover,
 a:focus {
   color: rgb(32, 175, 218);
   font-weight: bolder;
-  transition: 0.5s;
+  transition: all 0.5s;
+}
+.transitionBig {
+  font-size: 40px;
+  text-shadow: 2.5px 2.5px 2.5px rgb(37, 37, 37);
+  transition: all 0.5s;
+}
+.transitionBig:hover,
+.transitionBig:focus {
+  color: rgb(32, 175, 218);
+  font-weight: bolder;
+  font-size: 50px;
 }
 /* Contrast Ratio of body and p: 12.83:1 */
 /* Contrast Ratio of body and h1: 4:89:1 */
