@@ -31,7 +31,7 @@
           href="https://github.com/RetroCoding1"
           class="transitionBig"
           target="_blank"
-          onclick="myFunction()"
+          onclick="myFunctionGit()"
         >
           Social Link: GitHub
         </a>
@@ -48,6 +48,7 @@
           href="https://scratch.mit.edu/users/CodingMario1/"
           target="_blank"
           class="transitionBig"
+          onclick="myFunctionScratch()"
         >
           My Scratch Profile
         </a>
@@ -58,7 +59,7 @@
       </section>
     </main>
     <script>
-      function myFunction() {
+      function myFunctionGit() {
         event.preventDefault();
         var moveToGitHub = confirm(
           "You are about to head to RetroCoding1's GitHub Page (if it doesnt work, you may need to enable pop-ups)"
@@ -68,6 +69,18 @@
           window.open("https://github.com/RetroCoding1", "_blank");
         }
       }
+
+      function myFunctionScratch() {
+        event.preventDefault();
+        var moveToScratch = confirm(
+          "You are about to head to CodingMario1's Scratch Profile Page (if it doesnt work, you may need to enable pop-ups)"
+        );
+
+        if (moveToScratch) {
+          window.open("https://github.com/RetroCoding1", "_blank");
+        }
+      }
+      // Added Javascript as a little extra touch for assignment
     </script>
   </body>
 </html>
