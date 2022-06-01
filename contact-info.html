@@ -9,6 +9,11 @@
     <!--Stylesheets-->
     <link rel="stylesheet" href="stylesheets/css-pages-style.css" />
     <!--Stylesheets-->
+    <style>
+      a {
+        padding: 20px;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -40,6 +45,7 @@
           href="mailto:nickandretrocoding@gmail.com"
           target="_blank"
           class="transitionBig"
+          onclick="emailAlert()"
         >
           Email: nickandretrocoding@gmail.com
         </a>
@@ -52,9 +58,10 @@
         >
           My Scratch Profile
         </a>
-        <p style="font-size: 16px; color: black">
-          (My Scratch profile is if you want to try playing some games I made, I
-          recommend Mega Man's 8-bit RPG: Rebellion's End)
+        <p style="font-size: 14px; color: black">
+          (My Scratch profile is if you want to try playing some cool games I
+          made, I recommend Mega Man's 8-bit RPG: Rebellion's End. 3 bosses, 1
+          secret boss, cutscenes, get boss weapons, loads of fun)
         </p>
       </section>
     </main>
@@ -77,8 +84,12 @@
         );
 
         if (moveToScratch) {
-          window.open("https://github.com/RetroCoding1", "_blank");
+          window.open("https://scratch.mit.edu/users/CodingMario1/", "_blank");
         }
+      }
+
+      function emailAlert() {
+        alert("Don't email without good reason or I gotta block");
       }
       // Added Javascript as a little extra touch for assignment
     </script>
