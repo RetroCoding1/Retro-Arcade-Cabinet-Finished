@@ -56,8 +56,8 @@ body {
     top: 0;
     opacity: 1;
   }
-  /* Reloading the page causes the animation to play incorrectly. However, clicking a link in the nav will play the animation correctly.
-  No idea why this happens. */
+  /* Reloading the page causes the animation to play incorrectly (as in the opacity change fails and the page scrolls a bit). 
+  However, clicking a link in the nav will play the animation correctly. The reason for this is unknown. */
 }
 nav a:hover,
 nav a:focus {
