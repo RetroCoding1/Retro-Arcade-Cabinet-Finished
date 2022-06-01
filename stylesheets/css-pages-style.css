@@ -30,6 +30,9 @@ header {
   padding-bottom: 10px;
 }
 body {
+  -o-background-color: rgb(241, 255, 241);
+  -moz-background-color: rgb(255, 244, 241);
+  -webkit-background-color: rgb(244, 241, 255);
   background-color: rgb(255, 254, 241);
   margin-top: 2%;
   margin-bottom: 5%;
